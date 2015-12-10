@@ -1,0 +1,41 @@
+Collections-listen for changes on colleciton, not models
+
+Song Queue
+  -visible on the page
+  -play first
+  -add method
+  -When only one song in the queue it expects that it will have been played
+  -When more, it does not expec 'play first'
+  -When song ends (how to test), it removes it form queue
+  -has .length
+  -Recieves info from Library view? and player view?
+
+
+Song Collection
+  -Where the songs actually are
+  -Applies action to songs
+  -Sends song data to Queue and Library
+  -Receives references from Queue?
+
+Song Model
+  -url
+  -title
+  -artist
+
+
+Views
+  Player view
+    -Audio tag has 'ended' event info
+
+
+ Library Entry View
+   -tempate takes artist and title
+   -click handler that adds to queue
+
+
+
+
+Your main goal is to implement a song queue with some basic add/remove functionality.
+
+A suggested path: Start by examining the Song model, then fill out the Library and its corresponding views. Once you've done that, use the App model & view to hook the library up to the queue. Once your Queue tests pass, get the Player to work the way you expect.
+

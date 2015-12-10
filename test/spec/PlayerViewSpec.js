@@ -22,6 +22,7 @@ describe('PlayerView', function() {
     ]);
     // playerView is created in AppView initialize
     // access with appView.playerView
+    //model is the collection instatiated from Songs();
     appView = new AppView({model: new AppModel({library: library})});
   });
 
