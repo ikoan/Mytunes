@@ -13,7 +13,7 @@ describe('LibraryEntryView', function() {
 
   // This spec passes already, but it's mutually exclusive with the one below.
   // Comment it out when implementing the song queue.
-  xit ('plays clicked songs', function(){
+  it ('plays clicked songs', function(){
     sinon.spy(SongModel.prototype, 'play');
 
     view.$el.children().first().click();
